@@ -5,4 +5,11 @@ from tkinter import messagebox
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+def send_email():
+    subject = subject_entry.get()
+    message = message_entry.get("1.0", tk.END)
+    to_email = recipient_entry.get()
+    from_email = sender_entry.get()
+    password = password_entry.get()  # Get the password from the entry field
+
 
