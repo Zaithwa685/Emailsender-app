@@ -50,4 +50,13 @@ tk.Label(root, text="Your Email:").grid(row=2, column=0, sticky="e")
 sender_entry = tk.Entry(root, width=50)
 sender_entry.grid(row=2, column=1)
 
+# Password
+tk.Label(root, text="Your Password:").grid(row=3, column=0, sticky="e")
+password_entry = tk.Entry(root, show="*", width=50)
+password_entry.grid(row=3, column=1)
+
+# Message
+tk.Label(root, text="Message:").grid(row=4, column=0, sticky="ne")
+message_entry = tk.Text(root, width=37, height=10)
+message_entry.grid(row=4, column=1)
 
