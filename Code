@@ -45,4 +45,9 @@ tk.Label(root, text="Recipient Email:").grid(row=1, column=0, sticky="e")
 recipient_entry = tk.Entry(root, width=50)
 recipient_entry.grid(row=1, column=1)
 
+# Sender
+tk.Label(root, text="Your Email:").grid(row=2, column=0, sticky="e")
+sender_entry = tk.Entry(root, width=50)
+sender_entry.grid(row=2, column=1)
+
 
