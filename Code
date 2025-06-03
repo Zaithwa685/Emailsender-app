@@ -12,4 +12,12 @@ def send_email():
     from_email = sender_entry.get()
     password = password_entry.get()  # Get the password from the entry field
 
+    # Setup the MIME
+    email = MIMEMultipart()
+    email['From'] = from_email
+    email['To'] = to_email
+    email['Subject'] = subject
+
+    # Attach the message to the MIMEMultipart object
+    email.attach(MIMEText(message, 'plain'))
 
