@@ -60,3 +60,10 @@ tk.Label(root, text="Message:").grid(row=4, column=0, sticky="ne")
 message_entry = tk.Text(root, width=37, height=10)
 message_entry.grid(row=4, column=1)
 
+# Send Button
+send_button = tk.Button(root, text="Send Email", command=send_email)
+send_button.grid(row=5, column=1, sticky="e")
+
+# Run the application
+root.mainloop()
+
