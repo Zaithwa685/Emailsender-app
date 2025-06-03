@@ -7,6 +7,6 @@ Requirements:
 
 Create your desired templates for the application
 Change the font size and style 
-Change the color of the background and the texts and buttons
+Change the color of the background and the texts and buttons as shown below
              
 ![WhatsApp Image 2025-06-03 at 16 07 58_360a7969](https://github.com/user-attachments/assets/5f9cd3ca-5702-4e2c-b00b-c997b7f4e612)
