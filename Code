@@ -21,3 +21,13 @@ def send_email():
     # Attach the message to the MIMEMultipart object
     email.attach(MIMEText(message, 'plain'))
 
+    try:
+        # Connect to the Gmail SMTP server
+        with smtplib.SMTP('smtp.gmail.com', 587) as server:
+            server.starttls()  # Secure the connection
+            server.login(from_email, password)  # Use the from_email and password
+            server.sendmail(from_email, to_email, email.as_string())
+        messagebox.showinfo("Success", "Email sent successfully!")
+    except Exception as e:
+        messagebox.showerror("Error", f"An error occurred: {e}")
+
